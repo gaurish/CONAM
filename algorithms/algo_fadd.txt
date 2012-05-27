@@ -1,0 +1,102 @@
+Floating Addition :-
+
+Algorithm :-
+Step 1:-	Begin:
+Step 2:- 		Read   m1,m2,rm	
+			Read    e1,e2,i=0,re=0
+Step 3:-		if(e1==e2) then	
+Step 4:-		Compute rm=m1+m2
+Step 5:-		if(rm>0.1000 && rm<=0.9999) then			 
+			Compute re=e1;
+			Compute rm,re
+Step 6:-		End if			 
+Step 7:-		else if(rm>1) then
+			 
+Step 8:-		while(rm>1)
+			 
+			Compute rm=rm/10
+
+			Compute i++
+			 
+			Compute re=e1
+			Compute re=re+i
+Step 9:-		if(re>99) then
+			write “OverFlow"
+			else
+			write rm,re
+Step 10:-		end if
+Step 11:-		else if(rm<0.1) then			 
+Step 12:-		while(rm<0.1)
+			compute rm=rm*10
+			compute i++			 
+			compute re=e1
+			compute re=re-i
+Step 13:-		if(re<1) then
+			write"UnderFlow"
+			else
+			write rm,re
+Step 14:-		end if	
+Step 15:-		else if(e1>e2) then	
+Step 16:-		if(m1>m2) then			
+			Compute rm=m1+m2
+Step 17:-		if(rm>0.1000 && rm<=0.9999) then			 
+			Compute re=e1;
+			Compute rm,re
+Step 18:-		End if			 
+Step 19:-		else if(rm>1) then			 
+Step 20:-		while(rm>1)			 
+			Compute rm=rm/10
+			Compute i++			 
+			Compute re=e1
+			Compute re=re+i
+Step 21:-		if(re>99) then
+			write “OverFlow"
+			else
+			write rm,re
+Step 22:-		end if
+Step 23:-		else if(rm<0.1) then			 
+Step 24:-		while(rm<0.1)
+			compute rm=rm*10
+			compute i++			 
+			compute re=e1
+			compute re=re-i
+Step 25:-		if(re<1) then
+			write"UnderFlow"
+			else
+			write rm,re
+Step 26:-		end if
+			else
+			write "subtruction not posible"
+Step 27:-		end if
+Step 28:-		else if(e2>e1)
+			Compute rm=m1+m2
+Step 29:-		if(rm>0.1000 && rm<=0.9999) then			 
+			Compute re=e1;
+			Compute rm,re
+Step 30:-		End if			 
+Step 31:-		else if(rm>1) then		 
+Step 32:-		while(rm>1)		 
+			Compute rm=rm/10
+			Compute i++
+			Compute re=e1
+			Compute re=re+i
+Step 33:-		if(re>99) then
+			write “OverFlow"
+			else
+			write rm,re
+Step 34:-		end if
+Step 35:-		else if(rm<0.1) then			 
+Step 36:-		while(rm<0.1)
+			compute rm=rm*10
+			compute i++			 
+			compute re=e1
+			compute re=re-i
+Step 37:-		if(re<1) then
+			write"UnderFlow"
+			else
+			write rm,re
+Step 38:-		end if
+			else
+			write "subtruction not posible"
+Step 39:-		end if
+Step 40:-	 End

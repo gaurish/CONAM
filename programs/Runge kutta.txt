@@ -1,0 +1,32 @@
+Code:-
+
+#include<stdio.h>
+#include <math.h>
+#include<conio.h>
+//dy/dx = y – x
+ #define F(x,y)  (y)-(x)
+ void main()
+{
+  double y,x,y1,n,h,f,f1,k1,k2;
+  int j;
+  clrscr();
+  printf("\nEnter the value of x0: ");
+  scanf("%lf",&x0);
+  printf("\nEnter the value of y0: ");
+  scanf("%lf",&y0);
+  printf("\nEnter the value of h: ");
+  scanf("%lf",&h);
+  printf("\nEnter the value of last point: ");
+  scanf("%lf",&n);
+  x=x1;
+  y=y1;
+while(x<xf)
+{
+K1=F(x,y);
+X=(x+h);
+K2=F(x,(y+(h+k1)));
+Y=y+h*((k1+k2)\2);
+Printf(“\n in the value of x %f and y is %f”,x,y);
+getch();
+}
+

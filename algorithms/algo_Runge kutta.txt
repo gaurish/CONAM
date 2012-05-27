@@ -1,0 +1,15 @@
+Runge kutta:-
+
+Algorithm :-
+
+Step 1:-	Begin:
+Step 2:- 		Read   y,x,y1,n,h,f,f1,k1,k2;
+Step 3:- 		Read   j;
+Step 4:-		Setx=x1;
+ 			Sety=y1;
+Step 5:- 		while(x<xf)
+SetK1=F(x,y);
+SetX=(x+h);
+SetK2=F(x,(y+(h+k1)));
+SetY=y+h*((k1+k2)\2);
+Step 4:		End

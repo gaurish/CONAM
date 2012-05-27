@@ -1,0 +1,16 @@
+Strate line curve fitting:-
+
+Algorithm :-
+
+Step 1:-	Begin:
+Step 2:- 		Read   x[10].y[10],sx=0,s4=0,sx2=0,sx4=0,dnum1,num2;
+Step 3:- 		Read   i,n;
+Step 4:-		for i=1 until n step size of  1
+Step 5:- 		Set Sx=sx+x[i];
+Set Sx2=sx2+(x[i]*x[i]);
+Set S4=s4+y[i];
+Set Sxy=sxy+(x[i]*y[i]);
+Set d=(n*sx2)-(sx*sx);
+Set num1=((n*sxy) – (sx*sy))/d;
+Set num2=((sy*sx2)-(sx*sxy))/d;
+Step 6:-	End

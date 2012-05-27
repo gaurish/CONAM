@@ -1,0 +1,16 @@
+Lagrange Interpolation Method :- 
+
+Algorithm :-
+Step 1:-	Begin:
+Step 2:- 		Read   x[20],y[20],X,product,sum
+			Read    n,i,j;
+Step 3:-		for i=0 until n step size of  1
+ 			product=1
+Step 4:-		for j=0 to n step size of 1
+Step 5:-   		if(i!=j) then
+			compute  product=product*(X-x[j])/(x[i]-x[j])
+			End if
+	    		sum=0
+Step 6:-		compute  sum=sum+y[i]*product
+Step 7:-	 End
+

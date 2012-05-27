@@ -1,0 +1,20 @@
+Simpson 3/8:-
+
+Algorithm :-
+Step 1:-	Begin:
+Step 2:- 		Read   x[10],y[10],sum=0,h,temp
+Step 3:-		Read i,n,j,k=0;
+Step 4:-		Set h=x[1]-x[0];
+  			Set n=n-1;
+ 			Set sum = sum + y[0];
+for i=1 until n-j step size of  1
+   	if(k==0 || l==0) then
+  	      		set sum = sum + 3 * y[i];
+    			Set k=1;
+else
+  		   	Set sum = sum + 2 * y[i];
+ 		   	Set k=0;
+ 	   		End if
+   			Set sum = sum + y[i];
+   			Set sum = sum * (3*h/8);
+Step 5:		End

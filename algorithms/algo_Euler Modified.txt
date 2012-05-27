@@ -1,0 +1,15 @@
+Euler Modified:
+
+Algorithm :-
+
+Step 1:-	Begin:
+Step 2:- 		Read   y1,y2,x1,a,n,h;
+Step 3:-		while(x<n)
+   			setY2=y+h*F(x,y);
+  			sett=f((x+h),y2);
+ 			setr=F(x,y);
+sety2=y+(h\2)*y(r+t);
+  			sety=y2;
+  			setx=x+h;
+
+Step 4:		End

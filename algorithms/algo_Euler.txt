@@ -1,0 +1,13 @@
+Euler:-
+
+Algorithm :-
+
+Step 1:-	Begin:
+Step 2:- 		Read   y1,y2,x1,a,n,h;
+Step 3:-		Read j;
+Step 4:-		for i=2 until n+h step size of  1
+   			set y2= y1 + h * F(x1,y1);
+			sety1=y2;
+
+Step 5:		End
+

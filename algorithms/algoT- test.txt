@@ -1,0 +1,22 @@
+T- test:-
+
+Algorithm :-
+Step 1:-	Begin:
+Step 2:- 		Read   x[10],d[10],d1=0,d2=0,s,t,m,sum=0,x1=0,r;
+for i=1 until n step size of  1
+Set Sum=sum+x[i]
+Set Mn=sum/n
+for i=1 until n step size of  1
+Set D2[i]=d[i]*d[i];
+Set Sum=sum+d2[i];
+for i=1 until n step size of  1
+Set D1=d1+d[j];
+Set D1=d1/n;
+			for i=1 until n step size of  1
+Set x1=x1+x[j];
+Set X[j]=x1/n;
+Set S=sqrt((sum-(n*(d1*d1)))/(n-1))
+Set R=sqrt(n);
+Set T=((x1-m)/(s/r));
+Step 1:-	End
+	

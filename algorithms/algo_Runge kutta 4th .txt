@@ -1,0 +1,19 @@
+Runge kutta 4th order:-
+
+Algorithm :-
+
+Step 1:-	Begin:
+Step 2:- 		Read   y,x,y1,n,h,f,f1,k1,k2;
+Step 3:- 		Read   j;
+Step 4:-		Setx=x1;
+ 			Sety=y1;
+Step 5:- 		while(x<xf)
+SetK1=F(x,y);
+SetK2=F((x+h)\2,(y+((h+k1)/2)));
+SetK3=F((x+h)\2,(y+((h+k2)/2)));
+SetK4=F((x+h),(y+h*k3)));
+SetK=(k1+2*k2+2*k3+k4);
+SetY=y+(h*k);
+SetX=x+h Step 4:
+Step 6:-	End
+

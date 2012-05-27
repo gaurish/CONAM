@@ -1,0 +1,13 @@
+Algorithm :-
+Step 1:-	Begin:
+Step 2:- 		Read   x[20],y[20],d[20][20]
+			Read    n,i,j;
+Step 3:-		for j=1 until n step size of  1
+for i=1 until n-j step size of  1
+			if(j==1) then
+				set d[i][j]=((y[i+1]-y[i])/(x[i+1]-x[i]));
+			else
+				set d[i][j]=((d[i+1][j-1]-d[i][j-1])/(x[i+j]-x[i]));
+			End if
+Step 4:-	 End
+

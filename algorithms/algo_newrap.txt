@@ -1,0 +1,18 @@
+Newton Repson Method :-
+
+ Algorithm :-
+Step 1:-	Begin:
+Step 2:- 		Read   x1,x0,fx0,f1x,temp
+			Read    a, b, c, p1, p2
+Step 3:-		comput  p2=p1-1
+Step 4:-		while(x1!=temp)
+temp=x0
+			compute  fx0=pow(x0,p1)+(a*x0)+b
+			compute  f1x=p1*(pow(x0,p2))+a
+			compute  x1=x0-(fx0/f1x)
+Step 5:-		if(x1==x0) then
+			write x1
+			else
+			x0=x1
+End if
+ Step 6:-	 End

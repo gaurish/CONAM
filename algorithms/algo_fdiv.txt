@@ -1,0 +1,33 @@
+Algorithm :-
+Step 1:-	Begin:
+Step 2:- 		Read   m1,m2,rm
+			Read    e1,e2,i=0,re
+Step 3:-		compute rm=m1\m2;
+Step 4:-		if(rm>0.1000 && rm<=0.9999) then
+		 	Compute re=e1-e2
+			Write rm,re
+step 5:-		End if
+step 6:- 		else if(rm>1) then
+step 7:-		while(rm>1)
+			compute rm=rm/10
+			compute i++
+			compute re=e1-e2
+			compute  re=re+i
+step 8:-		End if
+step 9:-		if(re>99) then
+			write “OverFlow"
+			else
+			write rm,re
+step 10:-		else if(rm<0.1) then
+step 11:-		while(rm<0.1)
+			compute rm=rm*10
+			compute i++
+			compute re=e1-e2
+			compute re=re-i
+step 12:-		End if
+step 13:-		if(re<1) then
+			 write “UnderFlow"
+			 else
+			 write rm,re
+step 14:-		 End if
+Step 15:-	 End

@@ -1,0 +1,15 @@
+Newton backword:-
+
+Algorithm :-
+Step 1:-	Begin:
+Step 2:- 		Read   x[10],y[10],d[10][10]
+			Read    n,i,j;
+Step 3:-		for j=1 until n step size of  1
+for i=1 until n-j step size of  1
+			if(j==1) then
+				set d[i][j]=y[i]-y[i-1];
+			else
+				set d[i][j]=d[i][j-1]-d[i-1][j-1];
+			End if
+Step 4:-	 End
+
