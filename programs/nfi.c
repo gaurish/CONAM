@@ -7,14 +7,7 @@ main ()
 {
   int n;
   int i, j;
-  float ax[10];
-  float ay[10];
-  float x;
-  float y = 0;
-  float h;
-  float p;
-  float diff[20][20];
-  float y1, y2, y3, y4;
+  float ax[10], ay[10], x, y = 0, h, p, diff[20][20], y1, y2, y3, y4;
   clrscr ();
   printf ("\t\t!! NEWTON GRAGORY FORWARD INTERPOLATION FORMULA!!\n");
   printf ("\t\t By KRISHAN \t\t\n");
@@ -40,7 +33,7 @@ main ()
   h = ax[1] - ax[0];
   for (i = 0; i < n - 1; i++)
     diff[i][1] = ay[i + 1] - ay[i];
-  for (j = 2; j <= 4; j++)
+  for (j = 2; j <= n; j++)
     for (i = 0; i < n - j; i++)
       diff[i][j] = diff[i + 1][j - 1] - diff[i][j - 1];
   

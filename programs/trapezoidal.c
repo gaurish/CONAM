@@ -1,12 +1,12 @@
-Code:- 
 #include<stdio.h>
 #include<conio.h>
 #include<math.h>
-  void
+void
 main () 
 {
   float x[10], y[10], sum = 0, h, temp;
   int i, n, j, k = 0;
+  float fact (int);
   clrscr ();
   printf ("\nhow many record you will be enter: ");
   scanf ("%d", &n);
@@ -20,28 +20,23 @@ main ()
     }
   h = x[1] - x[0];
   n = n - 1;
-  sum = sum + y[0];
-  for (i = 1; i < n; i++)
+  for (i = 0; i < n; i++)
     
     {
       if (k == 0)
 	
 	{
-	  sum = sum + 4 * y[i];
+	  sum = sum + y[i];
 	  k = 1;
 	}
       
       else
-	
-	{
-	  sum = sum + 2 * y[i];
-	  k = 0;
-	}
+	sum = sum + 2 * y[i];
     }
   sum = sum + y[i];
-  sum = sum * (h / 3);
+  sum = sum * (h / 2);
   printf ("\n\n  I = %f  ", sum);
   getch ();
 }
 
- 
+

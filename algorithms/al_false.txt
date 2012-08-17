@@ -17,7 +17,7 @@ Step 7:-		if(fx3<0) then
 			else
 			x2=x3
 			fx2=fx3
-   Step 8:-		while((t1!=x1) || (t2!=x2))
-    			write x1
-    Step 9:-	 End
+Step 8:-	while((t1!=x1) || (t2!=x2))
+    		write x1
+Step 9:-	 End
 

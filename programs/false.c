@@ -1,10 +1,11 @@
+Code:- 
 #include<stdio.h>
 #include<conio.h>
 #include<math.h>
-void
+  void
 main () 
 {
-  float x1, x2, x3, t1, t2, fx;
+  float x1, x2, x3, t1, t2, fx3, fx1, fx2;
   int a, b, p1, p2, c;
   clrscr ();
   printf ("\n\nEnter the value of x1 = ");
@@ -21,22 +22,32 @@ main ()
   scanf ("%d", &p2);
   printf ("\nEnter the value of c = ");
   scanf ("%d", &c);
+  fx1 = (a * (pow (x1, p1))) + (b * (pow (x1, p2))) + (c);
+  fx2 = (a * (pow (x2, p1))) + (b * (pow (x2, p2))) + (c);
   
   do
     
     {
       t1 = x1;
       t2 = x2;
-      x3 = (x1 + x2) / 2;
-      fx = (a * (pow (x3, p1))) + (b * (pow (x3, p2))) + (c);
-      if (fx < 0)
-	x1 = x3;
+      x3 = ((x1 * fx2 - x2 * fx1) / (fx2 - fx1));
+      fx3 = (a * (pow (x3, p1))) + (b * (pow (x3, p2))) + (c);
+      if (fx3 < 0)
+	
+	{
+	  x1 = x3;
+	  fx1 = fx3;
+	}
       
       else
-	x2 = x3;
+	
+	{
+	  x2 = x3;
+	  fx2 = fx3;
+	}
     }
   while ((t1 != x1) || (t2 != x2));
-  printf ("%f\t%f", x1, x2);
+  printf ("%f", x1);
   getch ();
 }
 

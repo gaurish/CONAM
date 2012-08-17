@@ -24,10 +24,13 @@ main ()
     
     {
       K1 = F (x, y);
-      X = (x + h);
-      K2 = F (x, (y + (h + k1)));
-      Y = y + h * ((k1 + k2) \ 2);
+      K2 = F ((x + h) \ 2, (y + ((h + k1) / 2)));
+      K3 = F ((x + h) \ 2, (y + ((h + k2) / 2)));
+      K4 = F ((x + h), (y + h * k3)));
+      K = (k1 + 2 * k2 + 2 * k3 + k4);
+      Y = y + (h * k);
+      X = x + h;
       Printf (“\n in the value of x % f and y is % f ”, x, y);
       getch ();
     }
-   
+    

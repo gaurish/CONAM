@@ -6,7 +6,8 @@ Code:-
 main () 
 {
   float x[10], y[10], sum = 0, h, temp;
-  int i, n, j, k = 0;
+  int i, n, j, k = 0, l = 0;
+  float fact (int);
   clrscr ();
   printf ("\nhow many record you will be enter: ");
   scanf ("%d", &n);
@@ -24,10 +25,15 @@ main ()
   for (i = 1; i < n; i++)
     
     {
-      if (k == 0)
+      if (k == 0 || l == 0)
 	
 	{
-	  sum = sum + 4 * y[i];
+	  sum = sum + 3 * y[i];
+	  if (k == 1)
+	    
+	    {
+	      l = 1;
+	    }
 	  k = 1;
 	}
       
@@ -36,12 +42,13 @@ main ()
 	{
 	  sum = sum + 2 * y[i];
 	  k = 0;
+	  l = 0;
 	}
     }
   sum = sum + y[i];
-  sum = sum * (h / 3);
+  sum = sum * (3 * h / 8);
   printf ("\n\n  I = %f  ", sum);
   getch ();
 }
 
- 
+
